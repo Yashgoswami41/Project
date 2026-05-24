@@ -1,7 +1,7 @@
-from playwright.sync_api import page, expect
+from playwright.sync_api import Page, expect
 
 class home_page:
-    def __init__(self, page: page):
+    def __init__(self, page: Page):
         self.page = page
         self.upgrade_btn = page.get_by_role("button", name="Upgrade")
         self.performance_link = page.get_by_role("link", name="Performance")
